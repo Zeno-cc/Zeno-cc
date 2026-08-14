@@ -48,6 +48,16 @@ management, and dark-mode support.
 
 [Repository](https://github.com/Zeno-cc/Easy_Todo)
 
+## GitHub snapshot
+
+<p align="center">
+  <img src="./assets/profile-dashboard.svg" alt="Public GitHub snapshot for Zeno-cc: repository mix, language footprint, public activity and recent projects" />
+</p>
+
+<p align="center">
+  <sub>Public data only · generated daily from GitHub's public API · empty sections stay empty.</sub>
+</p>
+
 ## Working principles
 
 - Start with the data boundary before choosing the chart or component.
