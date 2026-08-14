@@ -28,19 +28,19 @@
 <text x="84" y="276" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" text-anchor="start" letter-spacing="0">owned public repositories · language bytes</text>
 <text x="84" y="297" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" text-anchor="start" letter-spacing="0">Jupyter Notebook</text>
 <rect x="222" y="284" width="268" height="14" rx="7" fill="#1b2a3b" stroke="none" stroke-opacity="1"/>
-<rect x="222" y="284" width="154.69467402831475" height="14" rx="7" fill="#31c8c2" stroke="none" stroke-opacity="1"/>
+<rect x="222" y="284" width="154.4895783663763" height="14" rx="7" fill="#31c8c2" stroke="none" stroke-opacity="1"/>
 <text x="520" y="297" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" text-anchor="end" letter-spacing="0">58%</text>
 <text x="84" y="326" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" text-anchor="start" letter-spacing="0">HTML</text>
 <rect x="222" y="313" width="268" height="14" rx="7" fill="#1b2a3b" stroke="none" stroke-opacity="1"/>
-<rect x="222" y="313" width="44.193547810290134" height="14" rx="7" fill="#e34c26" stroke="none" stroke-opacity="1"/>
+<rect x="222" y="313" width="44.13495558661797" height="14" rx="7" fill="#e34c26" stroke="none" stroke-opacity="1"/>
 <text x="520" y="326" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" text-anchor="end" letter-spacing="0">16%</text>
 <text x="84" y="355" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" text-anchor="start" letter-spacing="0">TypeScript</text>
 <rect x="222" y="342" width="268" height="14" rx="7" fill="#1b2a3b" stroke="none" stroke-opacity="1"/>
-<rect x="222" y="342" width="34.194275985714214" height="14" rx="7" fill="#3178c6" stroke="none" stroke-opacity="1"/>
+<rect x="222" y="342" width="34.148940891200795" height="14" rx="7" fill="#3178c6" stroke="none" stroke-opacity="1"/>
 <text x="520" y="355" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" text-anchor="end" letter-spacing="0">13%</text>
 <text x="84" y="384" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" text-anchor="start" letter-spacing="0">Python</text>
 <rect x="222" y="371" width="268" height="14" rx="7" fill="#1b2a3b" stroke="none" stroke-opacity="1"/>
-<rect x="222" y="371" width="25.07851112093932" height="14" rx="7" fill="#3572A5" stroke="none" stroke-opacity="1"/>
+<rect x="222" y="371" width="25.045261793701087" height="14" rx="7" fill="#3572A5" stroke="none" stroke-opacity="1"/>
 <text x="520" y="384" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" text-anchor="end" letter-spacing="0">9%</text>
 <text x="84" y="413" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" text-anchor="start" letter-spacing="0">Vue</text>
 <rect x="222" y="400" width="268" height="14" rx="7" fill="#1b2a3b" stroke="none" stroke-opacity="1"/>
@@ -76,18 +76,18 @@
 <text x="84" y="570" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="400" text-anchor="start" letter-spacing="0">Pushes</text>
 <rect x="222" y="559" width="268" height="12" rx="6" fill="#1b2a3b" stroke="none" stroke-opacity="1"/>
 <rect x="222" y="559" width="268" height="12" rx="6" fill="#31c8c2" stroke="none" stroke-opacity="1"/>
-<text x="520" y="570" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">15</text>
+<text x="520" y="570" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">16</text>
 <text x="84" y="599" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="400" text-anchor="start" letter-spacing="0">Stars / watches</text>
 <rect x="222" y="588" width="268" height="12" rx="6" fill="#1b2a3b" stroke="none" stroke-opacity="1"/>
-<rect x="222" y="588" width="232.26666666666668" height="12" rx="6" fill="#6ea8fe" stroke="none" stroke-opacity="1"/>
+<rect x="222" y="588" width="217.75" height="12" rx="6" fill="#6ea8fe" stroke="none" stroke-opacity="1"/>
 <text x="520" y="599" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">13</text>
 <text x="84" y="628" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="400" text-anchor="start" letter-spacing="0">Created</text>
 <rect x="222" y="617" width="268" height="12" rx="6" fill="#1b2a3b" stroke="none" stroke-opacity="1"/>
-<rect x="222" y="617" width="17.866666666666667" height="12" rx="6" fill="#6ea8fe" stroke="none" stroke-opacity="1"/>
+<rect x="222" y="617" width="16.75" height="12" rx="6" fill="#6ea8fe" stroke="none" stroke-opacity="1"/>
 <text x="520" y="628" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">1</text>
 <text x="84" y="657" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="400" text-anchor="start" letter-spacing="0">Other</text>
 <rect x="222" y="646" width="268" height="12" rx="6" fill="#1b2a3b" stroke="none" stroke-opacity="1"/>
-<rect x="222" y="646" width="17.866666666666667" height="12" rx="6" fill="#6ea8fe" stroke="none" stroke-opacity="1"/>
+<rect x="222" y="646" width="16.75" height="12" rx="6" fill="#6ea8fe" stroke="none" stroke-opacity="1"/>
 <text x="520" y="657" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">1</text>
 <rect x="612" y="490" width="532" height="250" rx="16" fill="#07101c" stroke="#8ea5bc" stroke-opacity="0.28"/>
 <text x="640" y="528" fill="#7de0d5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1.8">PROJECT PULSE</text>
