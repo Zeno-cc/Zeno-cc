@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">Zachary Xu — data systems, interfaces and notes</title>
+  <desc id="desc">A dark blue data-grid banner with a small chart and film perforation motif.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1220"/>
+      <stop offset="0.58" stop-color="#101d2c"/>
+      <stop offset="1" stop-color="#17283a"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#8ea5bc" stroke-opacity="0.12"/>
+    </pattern>
+    <linearGradient id="chart" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#31c8c2"/>
+      <stop offset="1" stop-color="#f3b55b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="300" rx="22" fill="url(#background)"/>
+  <rect x="1" y="1" width="1198" height="298" rx="21" fill="url(#grid)" stroke="#8ea5bc" stroke-opacity="0.28"/>
+  <rect x="48" y="48" width="6" height="204" rx="3" fill="#f3b55b"/>
+
+  <text x="88" y="90" fill="#9fb1c4" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="600" letter-spacing="5">ZENO-CC / PERSONAL WORKSPACE</text>
+  <text x="84" y="158" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="48" font-weight="700">Data systems,</text>
+  <text x="84" y="215" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="48" font-weight="700">interfaces &amp; notes.</text>
+  <text x="88" y="252" fill="#7de0d5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" letter-spacing="2">TRACE · BUILD · VERIFY</text>
+
+  <g transform="translate(820 52)">
+    <rect width="320" height="196" rx="16" fill="#07101c" fill-opacity="0.62" stroke="#8ea5bc" stroke-opacity="0.28"/>
+    <path d="M26 145H294M26 104H294M26 63H294M26 24H294" stroke="#8ea5bc" stroke-opacity="0.16"/>
+    <path d="M26 24V165M94 24V165M162 24V165M230 24V165M294 24V165" stroke="#8ea5bc" stroke-opacity="0.12"/>
+    <path d="M26 143L70 130L104 137L142 91L180 108L214 68L247 78L294 38" fill="none" stroke="url(#chart)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M26 143L70 130L104 137L142 91L180 108L214 68L247 78L294 38V165H26Z" fill="#31c8c2" fill-opacity="0.08"/>
+    <circle cx="142" cy="91" r="5" fill="#31c8c2"/>
+    <circle cx="214" cy="68" r="5" fill="#f3b55b"/>
+    <circle cx="294" cy="38" r="5" fill="#f5f8fb"/>
+    <text x="26" y="187" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="1.5">DATA / UI / KNOWLEDGE</text>
+  </g>
+
+  <g fill="none" stroke="#f5f8fb" stroke-opacity="0.56" stroke-width="2">
+    <circle cx="1160" cy="24" r="8"/>
+    <circle cx="1160" cy="50" r="8"/>
+    <circle cx="1160" cy="76" r="8"/>
+    <circle cx="1160" cy="102" r="8"/>
+    <circle cx="1160" cy="128" r="8"/>
+    <circle cx="1160" cy="154" r="8"/>
+    <circle cx="1160" cy="180" r="8"/>
+    <circle cx="1160" cy="206" r="8"/>
+    <circle cx="1160" cy="232" r="8"/>
+    <circle cx="1160" cy="258" r="8"/>
+  </g>
+</svg>
