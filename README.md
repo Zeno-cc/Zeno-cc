@@ -48,6 +48,16 @@ management, and dark-mode support.
 
 [Repository](https://github.com/Zeno-cc/Easy_Todo)
 
+### [Codex Context Boundary](https://github.com/Zeno-cc/codex-context-boundary)
+
+A local Codex skill for repairing provider-boundary failures when switching
+models through [opencodex](https://github.com/lidge-jun/opencodex). It keeps
+visible context usable while isolating opaque reasoning and compaction state,
+and provides an explicit recovery entry point: `$codex-context-boundary`.
+
+[Repository](https://github.com/Zeno-cc/codex-context-boundary) ·
+[Chinese README](https://github.com/Zeno-cc/codex-context-boundary#readme)
+
 ## GitHub snapshot
 
 <p align="center">
