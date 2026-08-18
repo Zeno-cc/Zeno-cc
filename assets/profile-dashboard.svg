@@ -9,15 +9,15 @@
 <text x="1144" y="76" fill="#71849a" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">refreshed 2026-08-18 · public API</text>
 <rect x="56" y="94" width="260" height="94" rx="14" fill="#07101c" stroke="#8ea5bc" stroke-opacity="0.28"/>
 <text x="76" y="122" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700" text-anchor="start" letter-spacing="1.4">PUBLIC REPOS</text>
-<text x="76" y="160" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="30" font-weight="700" text-anchor="start" letter-spacing="0">20</text>
+<text x="76" y="160" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="30" font-weight="700" text-anchor="start" letter-spacing="0">21</text>
 <text x="296" y="160" fill="#71849a" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" text-anchor="end" letter-spacing="0">visible repositories</text>
 <rect x="332" y="94" width="260" height="94" rx="14" fill="#07101c" stroke="#8ea5bc" stroke-opacity="0.28"/>
 <text x="352" y="122" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700" text-anchor="start" letter-spacing="1.4">OWNED PROJECTS</text>
-<text x="352" y="160" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="30" font-weight="700" text-anchor="start" letter-spacing="0">10</text>
+<text x="352" y="160" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="30" font-weight="700" text-anchor="start" letter-spacing="0">11</text>
 <text x="572" y="160" fill="#71849a" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" text-anchor="end" letter-spacing="0">non-fork repositories</text>
 <rect x="608" y="94" width="260" height="94" rx="14" fill="#07101c" stroke="#8ea5bc" stroke-opacity="0.28"/>
 <text x="628" y="122" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700" text-anchor="start" letter-spacing="1.4">TOTAL STARS</text>
-<text x="628" y="160" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="30" font-weight="700" text-anchor="start" letter-spacing="0">4</text>
+<text x="628" y="160" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="30" font-weight="700" text-anchor="start" letter-spacing="0">5</text>
 <text x="848" y="160" fill="#71849a" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" text-anchor="end" letter-spacing="0">across public repos</text>
 <rect x="884" y="94" width="260" height="94" rx="14" fill="#07101c" stroke="#8ea5bc" stroke-opacity="0.28"/>
 <text x="904" y="122" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700" text-anchor="start" letter-spacing="1.4">FOLLOWERS</text>
@@ -54,19 +54,19 @@
 <text x="640" y="252" fill="#7de0d5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1.8">REPOSITORY MIX</text>
 <text x="640" y="276" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" text-anchor="start" letter-spacing="0">public repositories only · owned vs forked</text>
 <rect x="644" y="286" width="468" height="22" rx="11" fill="#1b2a3b" stroke="none" stroke-opacity="1"/>
-<rect x="644" y="286" width="234" height="22" rx="11" fill="url(#accent)" stroke="none" stroke-opacity="1"/>
-<text x="644" y="337" fill="#7de0d5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start" letter-spacing="0">OWNED 10</text>
+<rect x="644" y="286" width="245.14285714285717" height="22" rx="11" fill="url(#accent)" stroke="none" stroke-opacity="1"/>
+<text x="644" y="337" fill="#7de0d5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start" letter-spacing="0">OWNED 11</text>
 <text x="1112" y="337" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="end" letter-spacing="0">FORKS 10</text>
 <text x="644" y="374" fill="#71849a" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700" text-anchor="start" letter-spacing="1.5">TOP STARS</text>
-<text x="644" y="402" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="400" text-anchor="start" letter-spacing="0">FilmFrame</text>
+<text x="644" y="402" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="400" text-anchor="start" letter-spacing="0">codex-context-bou…</text>
 <rect x="820" y="391" width="220" height="10" rx="5" fill="#1b2a3b" stroke="none" stroke-opacity="1"/>
 <rect x="820" y="391" width="220" height="10" rx="5" fill="#f3b55b" stroke="none" stroke-opacity="1"/>
 <text x="1112" y="402" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">1★</text>
-<text x="644" y="423" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="400" text-anchor="start" letter-spacing="0">Easy_Todo</text>
+<text x="644" y="423" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="400" text-anchor="start" letter-spacing="0">FilmFrame</text>
 <rect x="820" y="412" width="220" height="10" rx="5" fill="#1b2a3b" stroke="none" stroke-opacity="1"/>
 <rect x="820" y="412" width="220" height="10" rx="5" fill="#31c8c2" stroke="none" stroke-opacity="1"/>
 <text x="1112" y="423" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">1★</text>
-<text x="644" y="444" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="400" text-anchor="start" letter-spacing="0">py_study</text>
+<text x="644" y="444" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="400" text-anchor="start" letter-spacing="0">Easy_Todo</text>
 <rect x="820" y="433" width="220" height="10" rx="5" fill="#1b2a3b" stroke="none" stroke-opacity="1"/>
 <rect x="820" y="433" width="220" height="10" rx="5" fill="#31c8c2" stroke="none" stroke-opacity="1"/>
 <text x="1112" y="444" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">1★</text>
@@ -76,37 +76,37 @@
 <text x="84" y="570" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="400" text-anchor="start" letter-spacing="0">Pushes</text>
 <rect x="222" y="559" width="268" height="12" rx="6" fill="#1b2a3b" stroke="none" stroke-opacity="1"/>
 <rect x="222" y="559" width="268" height="12" rx="6" fill="#31c8c2" stroke="none" stroke-opacity="1"/>
-<text x="520" y="570" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">30</text>
+<text x="520" y="570" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">33</text>
 <text x="84" y="599" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="400" text-anchor="start" letter-spacing="0">Stars / watches</text>
 <rect x="222" y="588" width="268" height="12" rx="6" fill="#1b2a3b" stroke="none" stroke-opacity="1"/>
-<rect x="222" y="588" width="134" height="12" rx="6" fill="#6ea8fe" stroke="none" stroke-opacity="1"/>
-<text x="520" y="599" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">15</text>
+<rect x="222" y="588" width="129.93939393939394" height="12" rx="6" fill="#6ea8fe" stroke="none" stroke-opacity="1"/>
+<text x="520" y="599" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">16</text>
 <text x="84" y="628" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="400" text-anchor="start" letter-spacing="0">Created</text>
 <rect x="222" y="617" width="268" height="12" rx="6" fill="#1b2a3b" stroke="none" stroke-opacity="1"/>
-<rect x="222" y="617" width="17.866666666666667" height="12" rx="6" fill="#6ea8fe" stroke="none" stroke-opacity="1"/>
-<text x="520" y="628" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">2</text>
+<rect x="222" y="617" width="24.363636363636363" height="12" rx="6" fill="#6ea8fe" stroke="none" stroke-opacity="1"/>
+<text x="520" y="628" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">3</text>
 <text x="84" y="657" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="400" text-anchor="start" letter-spacing="0">Other</text>
 <rect x="222" y="646" width="268" height="12" rx="6" fill="#1b2a3b" stroke="none" stroke-opacity="1"/>
-<rect x="222" y="646" width="8.933333333333334" height="12" rx="6" fill="#6ea8fe" stroke="none" stroke-opacity="1"/>
+<rect x="222" y="646" width="8.121212121212121" height="12" rx="6" fill="#6ea8fe" stroke="none" stroke-opacity="1"/>
 <text x="520" y="657" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">1</text>
 <rect x="612" y="490" width="532" height="250" rx="16" fill="#07101c" stroke="#8ea5bc" stroke-opacity="0.28"/>
 <text x="640" y="528" fill="#7de0d5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1.8">PROJECT PULSE</text>
 <text x="640" y="552" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" text-anchor="start" letter-spacing="0">recently updated owned repositories</text>
-<text x="644" y="580" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" text-anchor="start" letter-spacing="0">FilmFrame</text>
-<text x="644" y="598" fill="#71849a" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" text-anchor="start" letter-spacing="0">TypeScript</text>
+<text x="644" y="580" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" text-anchor="start" letter-spacing="0">codex-context-boundary</text>
+<text x="644" y="598" fill="#71849a" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" text-anchor="start" letter-spacing="0">mixed / undocumented</text>
 <text x="1112" y="589" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">today · 1★</text>
 <line x1="644" y1="596" x2="1112" y2="596" stroke="#8ea5bc" stroke-opacity="0.14" stroke-width="1"/>
-<text x="644" y="616" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" text-anchor="start" letter-spacing="0">duckmail</text>
+<text x="644" y="616" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" text-anchor="start" letter-spacing="0">FilmFrame</text>
 <text x="644" y="634" fill="#71849a" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" text-anchor="start" letter-spacing="0">TypeScript</text>
-<text x="1112" y="625" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">158d ago · 0★</text>
+<text x="1112" y="625" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">today · 1★</text>
 <line x1="644" y1="632" x2="1112" y2="632" stroke="#8ea5bc" stroke-opacity="0.14" stroke-width="1"/>
-<text x="644" y="652" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" text-anchor="start" letter-spacing="0">Easy_Todo</text>
-<text x="644" y="670" fill="#71849a" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" text-anchor="start" letter-spacing="0">mixed / undocumented</text>
-<text x="1112" y="661" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">594d ago · 1★</text>
+<text x="644" y="652" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" text-anchor="start" letter-spacing="0">duckmail</text>
+<text x="644" y="670" fill="#71849a" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" text-anchor="start" letter-spacing="0">TypeScript</text>
+<text x="1112" y="661" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">158d ago · 0★</text>
 <line x1="644" y1="668" x2="1112" y2="668" stroke="#8ea5bc" stroke-opacity="0.14" stroke-width="1"/>
-<text x="644" y="688" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" text-anchor="start" letter-spacing="0">flink</text>
+<text x="644" y="688" fill="#f5f8fb" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" text-anchor="start" letter-spacing="0">Easy_Todo</text>
 <text x="644" y="706" fill="#71849a" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" text-anchor="start" letter-spacing="0">mixed / undocumented</text>
-<text x="1112" y="697" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">707d ago · 0★</text>
+<text x="1112" y="697" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">595d ago · 1★</text>
 <text x="56" y="784" fill="#71849a" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="start" letter-spacing="0">PUBLIC ONLY · SOURCE: api.github.com · generated by scripts/build-profile-dashboard.mjs</text>
 <text x="1144" y="784" fill="#71849a" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">2026-08-18</text>
 </svg>
