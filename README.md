@@ -41,10 +41,6 @@ frames or continuous strips.
 [Repository](https://github.com/Zeno-cc/FilmFrame) ·
 [Try the live demo](https://filmframemaker.vercel.app)
 
-### [Easy_Todo](https://github.com/Zeno-cc/Easy_Todo)
-
-A small macOS menu-bar todo app with keyboard shortcuts, sorting, completion
-management, and dark-mode support.
 
 [Repository](https://github.com/Zeno-cc/Easy_Todo)
 
