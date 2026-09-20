@@ -1,4 +1,4 @@
-name: Update profile dashboard
+name: 更新个人主页数据
 
 on:
   schedule:
@@ -14,20 +14,20 @@ jobs:
   update-dashboard:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out profile repository
+      - name: 检出个人主页仓库
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
+      - name: 配置 Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Generate public dashboard
+      - name: 生成公开数据概览
         run: node scripts/build-profile-dashboard.mjs
         env:
           GITHUB_TOKEN: ${{ github.token }}
 
-      - name: Commit dashboard when data changed
+      - name: 数据变化时提交概览
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -35,5 +35,5 @@ jobs:
           if git diff --cached --quiet; then
             exit 0
           fi
-          git commit -m "chore: update public profile dashboard [skip ci]"
+          git commit -m "chore: 更新个人主页数据概览 [skip ci]"
           git push

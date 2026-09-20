@@ -3,7 +3,7 @@ import { writeFile } from "node:fs/promises";
 const USERNAME = "Zeno-cc";
 const API_ROOT = "https://api.github.com";
 const OUTPUT = new URL("../assets/profile-dashboard.svg", import.meta.url);
-const FONT = "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
+const FONT = "PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Inter, ui-sans-serif, system-ui, sans-serif";
 const MONO = "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace";
 const API_TOKEN = process.env.GITHUB_TOKEN ?? process.env.GH_TOKEN;
 
@@ -35,13 +35,13 @@ const LANGUAGE_COLORS = {
 };
 
 const EVENT_LABELS = new Map([
-  ["PushEvent", "Pushes"],
-  ["PullRequestEvent", "Pull requests"],
-  ["IssuesEvent", "Issues"],
-  ["WatchEvent", "Stars / watches"],
-  ["CreateEvent", "Created"],
-  ["ReleaseEvent", "Releases"],
-  ["ForkEvent", "Forks"],
+  ["PushEvent", "推送"],
+  ["PullRequestEvent", "合并请求"],
+  ["IssuesEvent", "议题"],
+  ["WatchEvent", "收藏 / 关注"],
+  ["CreateEvent", "创建"],
+  ["ReleaseEvent", "发布"],
+  ["ForkEvent", "派生"],
 ]);
 
 function escapeXml(value) {
@@ -59,7 +59,7 @@ function shorten(value, maxLength) {
 }
 
 function formatNumber(value) {
-  return new Intl.NumberFormat("en-US").format(value);
+  return new Intl.NumberFormat("zh-CN").format(value);
 }
 
 function formatDateInShanghai() {
@@ -75,9 +75,9 @@ function daysSince(date) {
   const timestamp = Date.parse(date);
   if (!Number.isFinite(timestamp)) return "—";
   const days = Math.max(0, Math.floor((Date.now() - timestamp) / 86_400_000));
-  if (days === 0) return "today";
-  if (days === 1) return "1d ago";
-  return `${days}d ago`;
+  if (days === 0) return "今天";
+  if (days === 1) return "1 天前";
+  return `${days} 天前`;
 }
 
 async function getJson(path) {
@@ -161,10 +161,10 @@ function normalizeLanguages(repositories, languageMaps) {
     const rows = [...totals.entries()].sort((a, b) => b[1] - a[1]);
     const top = rows.slice(0, 5);
     const rest = rows.slice(5).reduce((sum, [, bytes]) => sum + bytes, 0);
-    if (rest > 0) top.push(["Other", rest]);
+    if (rest > 0) top.push(["其他", rest]);
     const total = top.reduce((sum, [, bytes]) => sum + bytes, 0);
     return {
-      mode: "language bytes",
+      mode: "代码字节占比",
       rows: top.map(([name, bytes]) => ({ name, value: bytes, share: bytes / total })),
     };
   }
@@ -176,7 +176,7 @@ function normalizeLanguages(repositories, languageMaps) {
   const rows = [...primary.entries()].sort((a, b) => b[1] - a[1]).slice(0, 6);
   const total = rows.reduce((sum, [, count]) => sum + count, 0) || 1;
   return {
-    mode: "detected primary language",
+    mode: "主语言占比",
     rows: rows.map(([name, value]) => ({ name, value, share: value / total })),
   };
 }
@@ -195,7 +195,7 @@ function renderDashboard({ user, repositories, languages, events, generatedDate 
     .slice(0, 4);
   const activity = new Map();
   for (const event of events) {
-    const label = EVENT_LABELS.get(event.type) ?? "Other";
+    const label = EVENT_LABELS.get(event.type) ?? "其他";
     activity.set(label, (activity.get(label) ?? 0) + 1);
   }
   const activityRows = [...activity.entries()].sort((a, b) => b[1] - a[1]).slice(0, 5);
@@ -203,21 +203,21 @@ function renderDashboard({ user, repositories, languages, events, generatedDate 
   const parts = [];
 
   parts.push(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">`);
-  parts.push(`<title id="title">Zeno-cc public GitHub snapshot</title>`);
-  parts.push(`<desc id="desc">A daily dashboard of public repositories, language footprint, repository mix, public activity, and recently updated projects.</desc>`);
+  parts.push(`<title id="title">Zeno-cc 公开 GitHub 数据概览</title>`);
+  parts.push(`<desc id="desc">公开仓库、语言分布、仓库构成、公开动态与近期项目的每日概览。</desc>`);
   parts.push(`<defs><linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${COLORS.backgroundStart}"/><stop offset="1" stop-color="${COLORS.backgroundEnd}"/></linearGradient><pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="${COLORS.border}" stroke-opacity="0.1"/></pattern><linearGradient id="accent" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="${COLORS.teal}"/><stop offset="1" stop-color="${COLORS.amber}"/></linearGradient></defs>`);
   svgRect(parts, 0, 0, 1200, 820, { fill: "url(#background)", radius: 22 });
   svgRect(parts, 1, 1, 1198, 818, { fill: "url(#grid)", stroke: COLORS.border, strokeOpacity: 0.28, radius: 21 });
 
-  svgText(parts, "PUBLIC GITHUB SNAPSHOT", 56, 54, { fill: COLORS.tealSoft, size: 17, weight: 700, family: MONO, letterSpacing: 3 });
+  svgText(parts, "公开 GITHUB 概览", 56, 54, { fill: COLORS.tealSoft, size: 17, weight: 700, family: MONO, letterSpacing: 3 });
   svgText(parts, USERNAME, 1144, 54, { fill: COLORS.muted, size: 14, family: MONO, anchor: "end", letterSpacing: 1.5 });
-  svgText(parts, `refreshed ${generatedDate} · public API`, 1144, 76, { fill: COLORS.faint, size: 11, family: MONO, anchor: "end" });
+  svgText(parts, `更新于 ${generatedDate} · 公开 API`, 1144, 76, { fill: COLORS.faint, size: 11, family: MONO, anchor: "end" });
 
   const cards = [
-    ["PUBLIC REPOS", repositories.length, "visible repositories"],
-    ["OWNED PROJECTS", owned.length, "non-fork repositories"],
-    ["TOTAL STARS", publicStars, "across public repos"],
-    ["FOLLOWERS", user.followers, "public profile"],
+    ["公开仓库", repositories.length, "当前可见"],
+    ["自有项目", owned.length, "不含派生仓库"],
+    ["累计 STAR", publicStars, "公开仓库合计"],
+    ["关注者", user.followers, "公开主页"],
   ];
   cards.forEach(([label, value, note], index) => {
     const x = 56 + index * 276;
@@ -227,9 +227,9 @@ function renderDashboard({ user, repositories, languages, events, generatedDate 
     svgText(parts, note, x + 240, 160, { fill: COLORS.faint, size: 10, family: MONO, anchor: "end" });
   });
 
-  panel(parts, 56, 214, 532, 250, "LANGUAGE FOOTPRINT", `owned public repositories · ${languages.mode}`);
+  panel(parts, 56, 214, 532, 250, "语言分布", `自有公开仓库 · ${languages.mode}`);
   if (languageRows.length === 0) {
-    svgText(parts, "No language data returned", 84, 310, { fill: COLORS.muted, size: 14 });
+    svgText(parts, "暂无语言数据", 84, 310, { fill: COLORS.muted, size: 14 });
   } else {
     languageRows.forEach((row, index) => {
       const y = 292 + index * 29;
@@ -241,14 +241,14 @@ function renderDashboard({ user, repositories, languages, events, generatedDate 
     });
   }
 
-  panel(parts, 612, 214, 532, 250, "REPOSITORY MIX", "public repositories only · owned vs forked");
+  panel(parts, 612, 214, 532, 250, "仓库构成", "仅统计公开仓库 · 自有与派生");
   const totalRepositories = Math.max(repositories.length, 1);
   const ownedWidth = 468 * (owned.length / totalRepositories);
   svgRect(parts, 644, 286, 468, 22, { fill: "#1b2a3b", radius: 11 });
   svgRect(parts, 644, 286, Math.max(0, ownedWidth), 22, { fill: "url(#accent)", radius: 11 });
-  svgText(parts, `OWNED ${owned.length}`, 644, 337, { fill: COLORS.tealSoft, size: 12, weight: 700, family: MONO });
-  svgText(parts, `FORKS ${forks.length}`, 1112, 337, { fill: COLORS.muted, size: 12, weight: 700, family: MONO, anchor: "end" });
-  svgText(parts, "TOP STARS", 644, 374, { fill: COLORS.faint, size: 11, weight: 700, family: MONO, letterSpacing: 1.5 });
+  svgText(parts, `自有 ${owned.length}`, 644, 337, { fill: COLORS.tealSoft, size: 12, weight: 700, family: MONO });
+  svgText(parts, `派生 ${forks.length}`, 1112, 337, { fill: COLORS.muted, size: 12, weight: 700, family: MONO, anchor: "end" });
+  svgText(parts, "收藏最多", 644, 374, { fill: COLORS.faint, size: 11, weight: 700, family: MONO, letterSpacing: 1.5 });
   const maxStars = Math.max(1, ...topStars.map((repository) => repository.stargazers_count));
   topStars.slice(0, 3).forEach((repository, index) => {
     const y = 398 + index * 21;
@@ -258,9 +258,9 @@ function renderDashboard({ user, repositories, languages, events, generatedDate 
     svgText(parts, `${repository.stargazers_count}★`, 1112, y + 4, { fill: COLORS.muted, size: 11, family: MONO, anchor: "end" });
   });
 
-  panel(parts, 56, 490, 532, 250, "PUBLIC ACTIVITY", `${events.length ? "latest public events" : "no recent public events"} · GitHub window`);
+  panel(parts, 56, 490, 532, 250, "公开动态", `${events.length ? "最近公开事件" : "近期暂无公开事件"} · GitHub 窗口`);
   if (activityRows.length === 0) {
-    svgText(parts, "No public events returned", 84, 590, { fill: COLORS.muted, size: 14 });
+    svgText(parts, "暂无公开动态", 84, 590, { fill: COLORS.muted, size: 14 });
   } else {
     const maxActivity = Math.max(1, ...activityRows.map(([, count]) => count));
     activityRows.forEach(([label, count], index) => {
@@ -272,20 +272,20 @@ function renderDashboard({ user, repositories, languages, events, generatedDate 
     });
   }
 
-  panel(parts, 612, 490, 532, 250, "PROJECT PULSE", "recently updated owned repositories");
+  panel(parts, 612, 490, 532, 250, "项目动态", "最近更新的自有仓库");
   if (recentProjects.length === 0) {
-    svgText(parts, "No public projects returned", 644, 590, { fill: COLORS.muted, size: 14 });
+    svgText(parts, "暂无公开项目", 644, 590, { fill: COLORS.muted, size: 14 });
   } else {
     recentProjects.forEach((repository, index) => {
       const y = 580 + index * 36;
       if (index > 0) svgLine(parts, 644, y - 20, 1112, y - 20, { stroke: COLORS.border, opacity: 0.14 });
       svgText(parts, shorten(repository.name, 23), 644, y, { fill: COLORS.ink, size: 13, weight: 600 });
-      svgText(parts, shorten(repository.language ?? "mixed / undocumented", 24), 644, y + 18, { fill: COLORS.faint, size: 10, family: MONO });
+      svgText(parts, shorten(repository.language ?? "混合 / 未标注", 24), 644, y + 18, { fill: COLORS.faint, size: 10, family: MONO });
       svgText(parts, `${daysSince(repository.pushed_at)} · ${repository.stargazers_count}★`, 1112, y + 9, { fill: COLORS.muted, size: 11, family: MONO, anchor: "end" });
     });
   }
 
-  svgText(parts, "PUBLIC ONLY · SOURCE: api.github.com · generated by scripts/build-profile-dashboard.mjs", 56, 784, { fill: COLORS.faint, size: 11, family: MONO });
+  svgText(parts, "仅统计公开数据 · 来源：api.github.com · 自动生成", 56, 784, { fill: COLORS.faint, size: 11, family: MONO });
   svgText(parts, generatedDate, 1144, 784, { fill: COLORS.faint, size: 11, family: MONO, anchor: "end" });
   parts.push("</svg>");
   return parts.join("\n");
