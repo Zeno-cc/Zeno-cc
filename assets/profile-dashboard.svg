@@ -76,22 +76,22 @@
 <text x="84" y="570" fill="#f5f8fb" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Inter, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="400" text-anchor="start" letter-spacing="0">推送</text>
 <rect x="222" y="559" width="268" height="12" rx="6" fill="#1b2a3b" stroke="none" stroke-opacity="1"/>
 <rect x="222" y="559" width="268" height="12" rx="6" fill="#31c8c2" stroke="none" stroke-opacity="1"/>
-<text x="520" y="570" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">29</text>
+<text x="520" y="570" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">30</text>
 <text x="84" y="599" fill="#f5f8fb" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Inter, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="400" text-anchor="start" letter-spacing="0">合并请求</text>
 <rect x="222" y="588" width="268" height="12" rx="6" fill="#1b2a3b" stroke="none" stroke-opacity="1"/>
-<rect x="222" y="588" width="92.41379310344828" height="12" rx="6" fill="#6ea8fe" stroke="none" stroke-opacity="1"/>
+<rect x="222" y="588" width="89.33333333333333" height="12" rx="6" fill="#6ea8fe" stroke="none" stroke-opacity="1"/>
 <text x="520" y="599" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">10</text>
 <text x="84" y="628" fill="#f5f8fb" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Inter, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="400" text-anchor="start" letter-spacing="0">创建</text>
 <rect x="222" y="617" width="268" height="12" rx="6" fill="#1b2a3b" stroke="none" stroke-opacity="1"/>
-<rect x="222" y="617" width="73.93103448275862" height="12" rx="6" fill="#6ea8fe" stroke="none" stroke-opacity="1"/>
+<rect x="222" y="617" width="71.46666666666667" height="12" rx="6" fill="#6ea8fe" stroke="none" stroke-opacity="1"/>
 <text x="520" y="628" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">8</text>
 <text x="84" y="657" fill="#f5f8fb" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Inter, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="400" text-anchor="start" letter-spacing="0">发布</text>
 <rect x="222" y="646" width="268" height="12" rx="6" fill="#1b2a3b" stroke="none" stroke-opacity="1"/>
-<rect x="222" y="646" width="73.93103448275862" height="12" rx="6" fill="#6ea8fe" stroke="none" stroke-opacity="1"/>
+<rect x="222" y="646" width="71.46666666666667" height="12" rx="6" fill="#6ea8fe" stroke="none" stroke-opacity="1"/>
 <text x="520" y="657" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">8</text>
 <text x="84" y="686" fill="#f5f8fb" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Inter, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="400" text-anchor="start" letter-spacing="0">收藏 / 关注</text>
 <rect x="222" y="675" width="268" height="12" rx="6" fill="#1b2a3b" stroke="none" stroke-opacity="1"/>
-<rect x="222" y="675" width="55.44827586206897" height="12" rx="6" fill="#6ea8fe" stroke="none" stroke-opacity="1"/>
+<rect x="222" y="675" width="53.6" height="12" rx="6" fill="#6ea8fe" stroke="none" stroke-opacity="1"/>
 <text x="520" y="686" fill="#9fb1c4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" text-anchor="end" letter-spacing="0">6</text>
 <rect x="612" y="490" width="532" height="250" rx="16" fill="#07101c" stroke="#8ea5bc" stroke-opacity="0.28"/>
 <text x="640" y="528" fill="#7de0d5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1.8">项目动态</text>
