@@ -1,74 +1,112 @@
 <p align="center">
-  <img src="./assets/profile-banner.svg" alt="Zeno-cc · 数据系统、产品界面、工具与知识" />
+  <img src="./assets/profile-banner.svg" width="100%" alt="Zeno-cc · 数据系统、产品界面、工具与知识" />
 </p>
 
 <p align="center">
-  <strong>把复杂的数据和工作流，整理成可解释、可复用、可验证的系统。</strong>
+  <picture>
+    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Zeno-cc/Zeno-cc/profile-assets/typing-dark-static.svg" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/Zeno-cc/Zeno-cc/profile-assets/typing-light-static.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Zeno-cc/Zeno-cc/profile-assets/typing-dark.svg" />
+    <img src="https://raw.githubusercontent.com/Zeno-cc/Zeno-cc/profile-assets/typing-light.svg" width="640" height="60" alt="把真实问题，做成顺手的工具。在数据里找答案，在界面里做减法。和 AI 一起，把想法一点点做出来。" />
+  </picture>
 </p>
 
 <p align="center">
-  数据系统 · macOS 工具 · 本地优先 · AI 协作开发
+  数据分析 · 桌面工具 · 摄影 · AI 协作开发
 </p>
 
 <p align="center">
   <a href="#代表作品">代表作品</a>
   ·
-  <a href="#公开数据概览">公开数据概览</a>
+  <a href="#一点点长出来的作品">贡献足迹</a>
   ·
   <a href="https://github.com/Zeno-cc?tab=repositories">全部仓库</a>
 </p>
 
 ## 你好，我是 Zeno-cc
 
-我喜欢把真实工作里那些容易混乱、反复确认、靠经验记住的东西，做成更清楚的系统和工具。
+做数据分析，也折腾摄影和 Mac 上的小工具。遇到不顺手的流程，就试着把它变成一个能长期用的东西。
 
-目前主要在做数据分析与可视化、Django / React 应用、macOS 工具，以及 SQL / Python 自动化。我也会用 AI 参与需求探索、实现、审查和验证，但更在意最后的业务边界、失败路径和验收标准能不能被人读懂。
+我的项目主要借助 AI 协作开发。我负责把需求讲清楚、打磨体验、核对结果；比起又多了一个功能，更在意它是不是解决了真实问题。
 
-**常用技术：** TypeScript · React · Python · Django · Swift · SQL · Docker · GitHub Actions
+**项目涉及：** TypeScript · React · Python · Django · Swift · SQL · Docker
 
 ## 代表作品
 
 ### [OPPO 耳机 Mac 控制器](https://github.com/Zeno-cc/OPPO-Earbuds-Mac-Controller)
 
-面向 OPPO 耳机的 macOS 菜单栏工具。可以查看耳机电量、切换降噪 / 通透、调整降噪强度、均衡器和低延迟模式，并尽量让 Mac 端体验接近原生设备控制。
+**切一次降噪，不必再拿起手机。**
 
-[查看仓库](https://github.com/Zeno-cc/OPPO-Earbuds-Mac-Controller) · [前往下载](https://github.com/Zeno-cc/OPPO-Earbuds-Mac-Controller/releases)
+在 Mac 菜单栏查看耳机电量、切换降噪与通透、调整降噪强度和均衡器，把常用的耳机操作留在手边。
 
-### [FilmFrame](https://github.com/Zeno-cc/FilmFrame)
+[查看项目](https://github.com/Zeno-cc/OPPO-Earbuds-Mac-Controller) · [下载安装](https://github.com/Zeno-cc/OPPO-Earbuds-Mac-Controller/releases)
 
-一间运行在浏览器里的数字暗房。照片在本地完成裁切、渲染和导出，可以生成 35mm 胶片边框、接触印样和连续胶片长条，不把照片上传到服务端。
+### [FilmFrame · 浏览器里的数字暗房](https://github.com/Zeno-cc/FilmFrame)
 
-[查看仓库](https://github.com/Zeno-cc/FilmFrame) · [在线体验](https://filmframemaker.vercel.app)
+**把数码照片，放进一卷胶片里。**
 
-### [Codex Context Boundary](https://github.com/Zeno-cc/codex-context-boundary)
+生成 35mm 胶片边框、接触印样和连续胶片长条。裁切、渲染和导出都在本地完成，照片不上传到服务端。
 
-面向 Codex / opencodex 的上下文边界修复方案，处理模型或供应商切换后，加密推理状态、上下文压缩和子代理任务无法继续的问题。
+[查看项目](https://github.com/Zeno-cc/FilmFrame) · [在线体验](https://filmframemaker.vercel.app)
 
-[查看仓库](https://github.com/Zeno-cc/codex-context-boundary)
+### [Codex 上下文边界修复](https://github.com/Zeno-cc/codex-context-boundary)
 
-## 我怎么做项目
+**给模型切换后的上下文，理清边界。**
 
-- **先讲清数据边界。** 在决定图表、组件和技术实现之前，先确认数据从哪里来、代表什么。
-- **把状态和失败路径做出来。** “正常时能跑”只是起点，异常、回退、恢复同样是产品的一部分。
-- **优先可复现和可解释。** 比起一次性的聪明捷径，我更喜欢下一次还能验证、还能继续改的方案。
-- **让 AI 加速，但不让上下文消失。** 需求、约束、验证结果和重要决策尽量沉淀成可读的文档和测试。
+面向 Codex / opencodex，处理供应商或模型切换后，由加密状态不兼容引起的上下文压缩和子代理任务异常。
 
-## 公开数据概览
+[查看项目](https://github.com/Zeno-cc/codex-context-boundary)
+
+## 一点点长出来的作品
 
 <p align="center">
-  <img src="./assets/profile-dashboard.svg" alt="Zeno-cc 的公开 GitHub 数据概览：仓库、语言分布、公开动态与近期项目" />
+  <picture>
+    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Zeno-cc/Zeno-cc/profile-assets/contributions-3d-dark-static.svg" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/Zeno-cc/Zeno-cc/profile-assets/contributions-3d-light-static.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Zeno-cc/Zeno-cc/profile-assets/contributions-3d-dark.svg" />
+    <img src="https://raw.githubusercontent.com/Zeno-cc/Zeno-cc/profile-assets/contributions-3d-light.svg" width="100%" alt="由真实 GitHub 贡献记录生成的立体草坪，贡献柱以生长动画呈现，统计标签为中文。" />
+  </picture>
 </p>
 
 <p align="center">
-  <sub>仅统计公开数据 · 每日通过 GitHub 公开接口自动更新</sub>
+  <sub>每一根柱子，都是某一天留下的痕迹。数据来自 GitHub 公开可见的贡献记录，每日自动刷新。</sub>
 </p>
 
-## 最近关注
+<details>
+  <summary>展开查看仓库、语言与近期动态</summary>
 
-- 让数据分析系统更容易维护、追溯和解释。
-- 做真正会长期使用的小工具，而不是只停留在演示阶段。
-- 探索 AI 参与软件工程后，怎样把上下文、测试和工程纪律保留下来。
+  <p align="center">
+    <img src="./assets/profile-dashboard.svg" width="100%" alt="公开仓库数量、语言分布、仓库构成与近期项目动态" />
+  </p>
+
+  <p align="center"><sub>这里只展示公开数据，不把活动数量当作代码质量或工时。</sub></p>
+</details>
+
+## 做项目时在意的事
+
+**从真实问题开始。** 先弄清数据代表什么、使用者需要什么，再决定用哪个图表和组件。
+
+**给结果留一条验证的路。** 不只看正常时能不能跑，也关心失败、恢复和下一次修改。
+
+**让上下文留下来。** 把重要决定写进文档，把踩过的坑留在测试里，让下一次不是重新开始。
+
+---
+
+<p align="center"><strong>让每一格努力，动起来。</strong></p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Zeno-cc/Zeno-cc/profile-assets/snake-dark-static.svg" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/Zeno-cc/Zeno-cc/profile-assets/snake-light-static.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Zeno-cc/Zeno-cc/profile-assets/snake-dark.svg" />
+    <img src="https://raw.githubusercontent.com/Zeno-cc/Zeno-cc/profile-assets/snake-light.svg" width="100%" alt="琥珀色小蛇沿着青绿色贡献格前进，数据来自 GitHub 公开可见贡献日历。" />
+  </picture>
+</p>
 
 <p align="center">
   <sub>继续把事情做清楚。</sub>
+</p>
+
+<p align="center">
+  <sub><a href="./docs/PROFILE_VISUALS.md">动效来源与维护说明</a></sub>
 </p>
