@@ -1,0 +1,144 @@
+name: 更新个人主页动画
+
+on:
+  schedule:
+    - cron: "43 0 * * *"
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+    paths:
+      - ".github/workflows/profile-animations.yml"
+      - "config/profile-3d.json"
+      - "scripts/prepare-profile-assets.py"
+      - "scripts/test_profile_assets.py"
+
+concurrency:
+  group: profile-animations
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  generate:
+    name: 生成深浅主题与静态版本
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: 检查资源处理逻辑
+        run: python -m unittest discover -s scripts -p 'test_profile_assets.py' -v
+
+      - name: 生成贡献小蛇
+        id: snake
+        continue-on-error: true
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3.5.0
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          github_token: ${{ github.token }}
+          outputs: |
+            .raw/snake-dark.svg?palette=github-dark&color_snake=#f3b55b&color_dots=#172b3b,#18575a,#198b86,#31c8c2,#7de0d5
+            .raw/snake-light.svg?palette=github-light&color_snake=#b7791f&color_dots=#e7eef3,#b1ddd7,#6dc7bc,#2d9d96,#087f8c
+
+      - name: 生成中文立体贡献草坪
+        id: grass
+        continue-on-error: true
+        uses: yoshi389111/github-profile-3d-contrib@5b718734e8da645411919f0ae9ab9e7f9377158f # v0.9.2
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: config/profile-3d.json
+          MAX_REPOS: "100"
+
+      - name: 缓存中文打字动效
+        id: typing
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p .raw
+          for theme in dark light; do
+            color=7DE0D5
+            if [ "$theme" = light ]; then color=087F8C; fi
+            curl --fail --silent --show-error --location --retry 2 --retry-delay 3 --max-time 45 \
+              --get 'https://readme-typing-svg.demolab.com/' \
+              --data-urlencode 'font=Noto Sans SC' \
+              --data-urlencode 'weight=500' \
+              --data-urlencode 'size=24' \
+              --data-urlencode 'duration=3800' \
+              --data-urlencode 'pause=1800' \
+              --data-urlencode "color=$color" \
+              --data-urlencode 'center=true' \
+              --data-urlencode 'vCenter=true' \
+              --data-urlencode 'repeat=true' \
+              --data-urlencode 'width=640' \
+              --data-urlencode 'height=60' \
+              --data-urlencode 'lines=把真实问题，做成顺手的工具。;在数据里找答案，在界面里做减法。;和 AI 一起，把想法一点点做出来。' \
+              --output ".raw/typing-$theme.svg"
+          done
+
+      - name: 校验图片并生成减少动态效果版本
+        run: python scripts/prepare-profile-assets.py
+        env:
+          SNAKE_OUTCOME: ${{ steps.snake.outcome }}
+          GRASS_OUTCOME: ${{ steps.grass.outcome }}
+          TYPING_OUTCOME: ${{ steps.typing.outcome }}
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: profile-visual-assets
+          path: .generated/profile/
+          if-no-files-found: error
+          retention-days: 7
+
+  publish:
+    name: 发布到独立资源分支
+    needs: generate
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: profile-assets
+          path: public
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: profile-visual-assets
+          path: generated
+
+      - name: 只替换本次成功生成的图片
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp generated/*.svg public/
+          cp generated/update-status.json public/
+          cd public
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- '*.svg' update-status.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'chore: 刷新个人主页动画 [skip ci]'
+          git push origin HEAD:profile-assets
+
+      - name: 报告刷新结果而不掩盖失败
+        shell: python
+        run: |
+          import json, os
+          from pathlib import Path
+          result = json.loads(Path('generated/update-status.json').read_text())
+          labels = {'snake': '贡献小蛇', 'grass': '立体草坪', 'typing': '中文打字'}
+          failed = []
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write('## 主页动画刷新结果\n\n')
+              for key, item in result['components'].items():
+                  state = '已更新' if item['updated'] else '更新失败，保留原图'
+                  summary.write(f"- {labels[key]}：{state}\n")
+                  if not item['updated']: failed.append(key)
+          if failed:
+              raise SystemExit('部分组件刷新失败：' + ', '.join(failed))
