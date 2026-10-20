@@ -10,7 +10,7 @@
 }
 </style>
 
-                <path id="path0">
+                    <path id="path0">
                             
                                 <animate id="d0" attributeName="d" begin="0s;d2.end" dur="5600ms" fill="remove" values="m0,30 h0 ; m0,30 h640 ; m0,30 h640 ; m0,30 h0" keyTimes="0;0.54285714285714;0.86428571428571;1" />
                     </path>
