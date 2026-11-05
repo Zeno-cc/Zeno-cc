@@ -23,13 +23,6 @@
   <a href="https://github.com/Zeno-cc?tab=repositories">全部仓库</a>
 </p>
 
-## 你好，我是 Zeno-cc
-
-做数据分析，也折腾摄影和 Mac 上的小工具。遇到不顺手的流程，就试着把它变成一个能长期用的东西。
-
-我的项目主要借助 AI 协作开发。我负责把需求讲清楚、打磨体验、核对结果；比起又多了一个功能，更在意它是不是解决了真实问题。
-
-**项目涉及：** TypeScript · React · Python · Django · Swift · SQL · Docker
 
 ## 代表作品
 
