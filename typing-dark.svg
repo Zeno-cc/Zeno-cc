@@ -10,7 +10,7 @@
 }
 </style>
 
-                    <path id="path0">
+                            <path id="path0">
                             
                                 <animate id="d0" attributeName="d" begin="0s;d2.end" dur="5600ms" fill="remove" values="m0,30 h0 ; m0,30 h640 ; m0,30 h640 ; m0,30 h0" keyTimes="0;0.54285714285714;0.86428571428571;1" />
                     </path>
@@ -19,7 +19,7 @@
             把真实问题，做成顺手的工具。
         </textPath>
     </text>
-        <path id="path1">
+                <path id="path1">
                             
                                 <animate id="d1" attributeName="d" begin="d0.end" dur="5600ms" fill="remove" values="m0,30 h0 ; m0,30 h640 ; m0,30 h640 ; m0,30 h0" keyTimes="0;0.54285714285714;0.86428571428571;1" />
                     </path>
@@ -28,7 +28,7 @@
             在数据里找答案，在界面里做减法。
         </textPath>
     </text>
-        <path id="path2">
+                <path id="path2">
                             
                                 <animate id="d2" attributeName="d" begin="d1.end" dur="5600ms" fill="remove" values="m0,30 h0 ; m0,30 h640 ; m0,30 h640 ; m0,30 h0" keyTimes="0;0.54285714285714;0.86428571428571;1" />
                     </path>
